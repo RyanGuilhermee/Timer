@@ -9,7 +9,7 @@ function timer() {
     let s = 0;
     let intervalo;
 
-    botaoIniciar.addEventListener('click', function () {
+    botaoIniciar.addEventListener('click', () => {
         clearInterval(intervalo);
         cronometro.style.color = 'rgb(235, 217, 255)';
         intervalo = setInterval(() => {
@@ -18,12 +18,12 @@ function timer() {
 
     });
 
-    botaoPausar.addEventListener('click', function () {
+    botaoPausar.addEventListener('click', () => {
         cronometro.style.color = 'rgb(241, 12, 12)';
         clearInterval(intervalo);
     });
 
-    botaoResetar.addEventListener('click', function () {
+    botaoResetar.addEventListener('click', () => {
         cronometro.style.color = 'rgb(235, 217, 255)';
         clearInterval(intervalo);
         h = 0;
